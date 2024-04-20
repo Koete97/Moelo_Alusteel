@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
+
+  <link rel="stylesheet" href="output.css">
+
+</head>
+<body>
+  <header>
+    <nav class="h-[80px] shadow-md">
+      <div class="flex justify-end mr-9 lg:hidden">
+        <button id="hamburger" class="top-0 left-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-8 h-8 mt-6 ml-[60%] stroke-gray-700
+            md:w-10 md:h-10 md:mt-4 md:ml-[680px] md:stroke-gray-700
+            lg:w-10 lg:h-10 lg:mt-2 lg:ml-64 lg:stroke-gray-700">
+            <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+          </svg>
+        </button>
+
+      </div>
+      <div class="w-40 h-20 absolute left-10 top-1" >
+        <img src="prod/img/nav.jpg" alt="">
+      </div>
+      <div class="hidden absolute-left-12 top-6
+      md:hidden md:absolute md:right-12 md:top-6
+      lg:flex lg:absolute lg:right-12 lg:top-6">
+        <a class="text-xl text-gray-700 font-semibold px-4" href="index.html">Home</a>
+        <a class="text-xl text-gray-700 font-semibold px-4" href="service.html">Services</a>
+        <a class="text-xl text-gray-700 font-semibold px-4" href="about.html">About</a>
+        <a class="text-xl text-white bg-gray-700 font-semibold px-4 py-1 rounded-md" href="contact.html">Contacts</a>
+      </div>
+      
+    </nav>
+    <div id="mobile-menu" class="hidden bg-white h-fit w-full md:w-[400px] mt-4 mb-4 ml-4 relative">
+      <a href="index.html" class="block text-base font-semibold text-gray-700 py-3 animation-slide">Home</a>
+      <a href="service.html" class="block text-base font-semibold text-gray-700 py-3 animation-slide">Our Services</a>
+      <a href="about.html" class="block text-base font-semibold text-gray-700 py-3 animation-slide">About us</a>
+      <a href="contact.html" class="block text-base font-semibold text-gray-700 py-3 animation-slide">Contact us</a>
+    </div>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('animation-slide');
+      });
+
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('animation-slide');
+          });
+        });
+    </script>
+  </header>
+<main>
+  <section>
+    <div class="flex justify-center mt-14
+    md:flex md:justify-center md:mt-14
+    lg:flex lg:justify-between lg:mt-14
+    xl:flex xl:justify-between xl:mt-14">
+      <div class="ring-4 ring-gray-700 w-[300px] h-fit ml-0 mb-5 rounded-md
+      md:ring-4 md:ring-gray-700 md:w-[600px] md:h-fit md:ml-0 md:mb-5 md:rounded-md
+      lg:ring-4 lg:ring-gray-700 lg:w-[600px] lg:h-screen lg:ml-12 lg:mb-5 lg:rounded-md
+      xl:ring-4 xl:ring-gray-700 xl:w-[600px] xl:h-screen xl:ml-12 xl:mb-5 xl:rounded-md">
+        <h1 class="text-3xl font-semibold w-[280px] mt-10 text-center
+        md:text-5xl md:font-semibold md:w-[580px] md:mt-10 md:text-center
+        lg:text-6xl lg:font-semibold lg:w-[580px] lg:mt-10 lg:text-center
+        xl:text-6xl xl:font-semibold xl:w-[580px] xl:mt-10 xl:text-center">About <span class="text-red-700">us</span></h1>
+        <p class="text-base text-justify w-[250px] mt-5 mx-auto
+        md:text-xl md:w-[550px] md:mt-5 md:mx-auto
+        lg:text-xl lg:w-[550px] lg:mt-5 lg:mx-auto
+        xl:text-xl xl:w-[550px] xl:mt-5 xl:mx-auto">Moelo Alusteel And Glass is a leading provider of security solutions, offering a comprehensive range of products and services to safeguard residential and commercial properties. Our expertise lies in the production and distribution of high-quality Security Doors & Burglar Bars, Aluminium Doors & Windows, Garage Doors & Staircases, Aluminium Gates & Steel Gates, as well as Palisade Fencing & Wall Spikes. <br><br>With a commitment to excellence and customer satisfaction, we strive to meet the diverse security needs of our clients. Our team of skilled professionals ensures that all our products are crafted to the highest standards of durability, functionality, and aesthetic appeal. In addition to our product offerings, we also provide repair services to ensure the ongoing reliability and performance of our installations. Whether it's reinforcing security measures or enhancing the visual appeal of your property, Moelo Alusteel And Glass is your trusted partner in safeguarding what matters most.</p>
+      </div>
+      <div class="hidden
+      md:hidden
+      lg:block">
+        <img class="h-[400px] w-[600px] rounded-md mr-12" src="img/hero.jpg" alt="">
+        <div class="flex justify-between px-10 py-16 h-[260px] w-[600px] rounded-md mt-[25px] bg-gray-200">
+          <div class="w-[200px] h-[100px] bg-white rounded-md">
+            <h1 class="text-3xl ml-5 mt-4">10+</h1>
+            <h2 class="text-xl ml-5">Years experience</h2>
+          </div>
+          <div class="w-[200px] h-[100px] bg-white rounded-md">
+            <h1 class="text-3xl ml-5 mt-4">8+ Awards</h1>
+            <h2 class="text-xl ml-5"></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="mb-20">
+      <h1 class="text-3xl font-extrabold mt-20 text-center
+      md:text-5xl md:font-extrabold md:mt-20 md:text-center
+      lg:text-6xl lg:font-extrabold lg:mt-20 lg:text-center
+      xl:text-6xl xl:font-extrabold xl:mt-20 xl:text-center"><span class="text-red-700">Our</span> vision</h1>
+      <div class="flex justify-center">
+        <p class="w-[300px] text-justify text-base mt-10
+        md:w-[600px] md:text-xl md:mt-10
+        lg:w-[700px] lg:text-xl lg:mt-10
+        xl:w-[700px] xl:text-xl xl:mt-10">Our vision is to provide premium-quality doors, windows, gates, and security features for homes and businesses, enhancing aesthetics while prioritizing safety and functionality. We aim to be the leading provider of innovative solutions, continuously improving and exceeding expectations in product quality, craftsmanship, and customer service.</p>
+      </div> 
+    </div>
+  </section>
+</main>
+<footer>
+  <section class="bg-gray-700">
+    <article class="max-w-[1000px] mx-auto py-16">
+      <div class="flex flex-col items-center">
+        <div class="flex space-x-4 items-center">
+          
+
+          <p class="text-sm font-semibold text-white">Moelo Alusteel And Glass</p>
+        </div>
+      </div>
+
+      <div class="mt-5 text-center">
+        <p class="text-white">
+          &quot; Worthwhile Services for
+          <span class="text-red-700 font-semibold">Personal</span> /
+          <span class="text-red-700 font-semibold">Businesses'</span>
+          needs &quot;
+        </p>
+      </div>
+
+      <div class="mt-10 flex flex-col space-x-4 items-center">
+        <h1 class="text-xl font-semibold mb-4 text-white">Our Location</h1>
+
+        <ul class="flex space-x-6">
+          <li
+            class="">
+            <h1 class="text-white">Maseru(HQ)</h1>
+          </li>
+          <li
+            class="">
+            <h1 class="text-white">Mafeteng</h1>
+          </li>
+          <li
+            class="">
+            <h1 class="text-white">Hlotse</h1>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="bg-gray-950 p-2">
+      <p class="text-center text-white font-semibold text-sm">
+        Moelo Alusteel And Glass <span class="text-red-700">&copy;</span>
+        <span class="year">2024</span>. <span>All Rights Reserved</span>
+      </p>
+    </article>
+  </section>
+</footer>
+  
+</body>
+</html>

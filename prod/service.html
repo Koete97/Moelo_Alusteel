@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services</title>
+
+  <link rel="stylesheet" href="output.css" />
+
+</head>
+<body>
+  <header>
+    <nav class="h-[80px] shadow-md">
+      <div class="flex justify-end mr-9 lg:hidden">
+        <button id="hamburger" class="top-0 left-0">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-8 h-8 mt-6 ml-[60%] stroke-gray-700
+            md:w-10 md:h-10 md:mt-4 md:ml-[680px] md:stroke-gray-700
+            lg:w-10 lg:h-10 lg:mt-2 lg:ml-64 lg:stroke-gray-700">
+            <path stroke-linecap="round" stroke-linejoin="round"
+            d="M3.75 12h16.5m-16.5 3.75h16.5M3.75 19.5h16.5M5.625 4.5h12.75a1.875 1.875 0 010 3.75H5.625a1.875 1.875 0 010-3.75z" />
+          </svg>
+        </button>
+
+      </div>
+      <div class="w-40 h-20 absolute left-10 top-1" >
+        <img src="prod/img/nav.jpg" alt="">
+      </div>
+      <div class="hidden absolute-left-12 top-6
+      md:hidden md:absolute md:right-12 md:top-6
+      lg:flex lg:absolute lg:right-12 lg:top-6">
+        <a class="text-xl text-gray-700 font-semibold px-4" href="index.html">Home</a>
+        <a class="text-xl text-gray-700 font-semibold px-4" href="service.html">Services</a>
+        <a class="text-xl text-gray-700 font-semibold px-4" href="about.html">About</a>
+        <a class="text-xl text-white bg-gray-700 font-semibold px-4 py-1 rounded-md" href="contact.html">Contacts</a>
+      </div>
+      
+    </nav>
+    <div id="mobile-menu" class="hidden bg-white h-fit w-full md:w-[400px] mt-4 mb-4 ml-4 relative">
+      <a href="index.html" class="block text-base font-semibold text-gray-700 py-3 animation-slide">Home</a>
+      <a href="service.html" class="block text-base font-semibold text-gray-700 py-3 animation-slide">Our Services</a>
+      <a href="about.html" class="block text-base font-semibold text-gray-700 py-3 animation-slide">About us</a>
+      <a href="contact.html" class="block text-base font-semibold text-gray-700 py-3 animation-slide">Contact us</a>
+    </div>
+
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      hamburger.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('animation-slide');
+      });
+
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('animation-slide');
+          });
+        });
+    </script>
+  </header>
+  <main>
+    <section>
+      <div class="block justfy-between mx-8 mt-10
+      md:flex md:justify-between md:mx-16 md:mt-20
+      lg:flex lg:justify-between lg:mx-16 lg:mt-28
+      xl:flex xl:justify-between xl:mx-16 xl:mt-28">
+        <div class="md:w-[500px]
+        lg:w-[600px]
+        xl:w-[600px]">
+          <h1 class="text-3xl text-gray-700 text-center font-semibold
+          md:text-3xl md:text-gray-700 md:text-center md:font-semibold
+          lg:text-5xl lg:text-gray-700 lg:text-center lg:font-semibold
+          xl:text-5xl xl:text-gray-700 xl:text-center xl:font-semibold">Aluminium <span class="text-red-700">Doors</span> & Windows</h1>
+          <p class="text-base text-gray-900 text-justify mx-5 my-5
+          lg:text-xl lg:text-gray-900 lg:mx-5 lg:my-5
+          xl:text-xl xl:text-gray-900 xl:mx-5 xl:my-5">Our aluminum windows and doors are designed for modern style and durability, offering sleek frames that resist rust and weather. Customizable to fit your space, these energy-efficient windows and doors are low maintenance, secure, and environmentally friendly. Made from recyclable materials, they are a smart choice for any building, providing a stylish, practical, and sustainable solution for your windows and doors.</p>
+        </div>
+        <div class="flex justify-center">
+          <img class="block h-[250px] w-[200px] my-7 rounded-md
+          md:block md:h-[250px] md:w-[300px] md:shadow-md md:shadow-gray-700 md:rounded-full md:my-7
+          lg:block lg:h-[400px] lg:w-[580px] lg:shadow-md lg:shadow-gray-700 lg:rounded-md lg:my-0
+          xl:block xl:h-[400px] xl:w-[580px] xl:shadow-md xl:shadow-gray-700 xl:rounded-md xl:my-0" src="img/aluminium door.jpg" alt="">
+        </div>
+      </div>
+      <div class="block justfy-between mx-8 mt-10
+      md:flex md:justify-between md:mx-16 md:mt-20
+      lg:flex lg:justify-between lg:mx-16 lg:mt-28
+      xl:flex xl:justify-between xl:mx-16 xl:mt-28">
+        <div>
+          <img class="hidden
+          md:block md:h-[250px] md:w-[300px] md:shadow-md md:shadow-gray-700 md:rounded-full md:my-7
+          lg:block lg:h-[400px] lg:w-[580px] lg:shadow-md lg:shadow-gray-700 lg:rounded-md lg:my-0
+          xl:block xl:h-[400px] xl:w-[580px] xl:shadow-md xl:shadow-gray-700 xl:rounded-md xl:my-0" src="img/garage door.jpg">
+        </div>
+        <div class="md:w-[500px]
+        lg:w-[600px]
+        xl:w-[600px]">
+          <h1 class="text-3xl text-gray-700 text-center font-semibold
+          md:text-3xl md:text-gray-700 md:text-center md:font-semibold
+          lg:text-5xl lg:text-gray-700 lg:text-center lg:font-semibold
+          xl:text-5xl xl:text-gray-700 xl:text-center xl:font-semibold">Garage <span class="text-red-700">Doors</span> & Staircases</h1>
+          <p class="text-base text-gray-900 text-justify mx-5 my-5
+          md:text-base md:text-gray-900 md:mx-5 md:my-5
+          lg:text-xl lg:text-gray-900 lg:mx-5 lg:my-5
+          xl:text-xl xl:text-gray-900 xl:mx-5 xl:my-5">Our selection of garage doors and staircases is designed to enhance home functionality and aesthetics. Made from durable materials like steel, wood, and aluminum, they offer reliable protection for vehicles and belongings. Our staircases are precision-crafted for easy access to different levels, with classic wooden or modern metal designs available to suit every taste and budget. Upgrade your home with our high-quality products.</p>
+        </div>
+      </div>
+      <div class="block justify mx-8 mt-10
+      md:flex md:justify-between md:mx-16 md:mt-20
+      lg:flex lg:justify-between lg:mx-16 lg:mt-28
+      xl:flex xl:justify-between xl:mx-16 xl:mt-28">
+        <div class="md:w-[500px]
+        lg:w-[600px]
+        xl:w-[600px]">
+          <h1 class="text-3xl text-gray-700 text-center font-semibold
+          md:text-3xl md:text-gray-700 md:text-center md:font-semibold
+          lg:text-5xl lg:text-gray-700 lg:text-center lg:font-semibold
+          xl:text-5xl xl:text-gray-700 xl:text-center xl:font-semibold">Security <span class="text-red-700">Doors</span> & Burglar Bars</h1>
+          <p class="text-base text-justify text-gray-900 mx-5 my-5
+          lg:text-xl lg:text-gray-900 lg:mx-5 lg:my-5
+          xl:text-xl xl:text-gray-900 xl:mx-5 xl:my-5">Our security doors and burglar bars are designed to keep your home safe and secure. Made from robust materials and innovative locking mechanisms, they offer extra protection against intruders. Available in steel and aluminum finishes, they blend seamlessly with your home's aesthetics. Pair them with our burglar bars for added protection on windows and entry points, ensuring your home is fortified against unwanted intrusion.</p>
+        </div>
+        <div class="flex justify-center">
+          <img class="block h-[250px] w-[200px] my-7 rounded-md
+          md:block md:h-[250px] md:w-[300px] md:shadow-md md:shadow-gray-700 md:rounded-full md:my-7
+          lg:block lg:h-[400px] lg:w-[580px] lg:shadow-md lg:shadow-gray-700 lg:rounded-md lg:my-0
+          xl:block xl:h-[400px] xl:w-[580px] xl:shadow-md xl:shadow-gray-700 xl:rounded-md xl:my-0" src="img/bars.jpeg" alt="">
+        </div>
+      </div>
+      <div class="block justfy-between mx-8 mt-10
+      md:flex md:justify-between md:mx-16 md:mt-20
+      lg:flex lg:justify-between lg:mx-16 lg:mt-28
+      xl:flex xl:justify-between xl:mx-16 xl:mt-28">
+        <div>
+          <img class="hidden
+          md:block md:h-[250px] md:w-[300px] md:shadow-md md:shadow-gray-700 md:rounded-full md:my-7
+          lg:block lg:h-[400px] lg:w-[580px] lg:shadow-md lg:shadow-gray-700 lg:rounded-md lg:my-0
+          xl:block xl:h-[400px] xl:w-[580px] xl:shadow-md xl:shadow-gray-700 xl:rounded-md xl:my-0" src="img/gate.jpg">
+        </div>
+        <div class="md:w-[500px]
+        lg:w-[600px]
+        xl:w-[600px]">
+          <h1 class="text-3xl text-gray-700 text-center font-semibold
+          md:text-3xl md:text-gray-700 md:text-center md:font-semibold
+          lg:text-5xl lg:text-gray-700 lg:text-center lg:font-semibold
+          xl:text-5xl xl:text-gray-700 xl:text-center xl:font-semibold">Aluminium <span class="text-red-700">Gates</span> & Steel Gates</h1>
+          <p class="text-base text-gray-900 text-justify mx-5 my-5
+          md:text-base md:text-gray-900 md:mx-5 md:my-5
+          lg:text-xl lg:text-gray-900 lg:mx-5 lg:my-5
+          xl:text-xl xl:text-gray-900 xl:mx-5 xl:my-5">Our collection of aluminum and steel gates offers a blend of durability and style for your property's entrance. Aluminum gates are lightweight, resistant to rust and corrosion, and offer customizable design options. Steel gates, made from high-quality steel, provide unparalleled strength and security, enhancing curb appeal and property security. Both options are designed to complement your home or business, ensuring minimal maintenance and a modern aesthetic.</p>
+        </div>
+      </div>
+      <div class="block justify mx-8 mt-10
+      md:flex md:justify-between md:mx-16 md:mt-20
+      lg:flex lg:justify-between lg:mx-16 lg:mt-28
+      xl:flex xl:justify-between xl:mx-16 xl:mt-28">
+        <div class="md:w-[500px]
+        lg:w-[600px]
+        xl:w-[600px]">
+          <h1 class="text-3xl text-gray-700 text-center font-semibold
+          md:text-3xl md:text-gray-700 md:text-center md:font-semibold
+          lg:text-5xl lg:text-gray-700 lg:text-center lg:font-semibold
+          xl:text-5xl xl:text-gray-700 xl:text-center xl:font-semibold">Palisade <span class="text-red-700">fancing</span> & Wall Spikes</h1>
+          <p class="text-base text-justify text-gray-900 mx-5 my-5
+          lg:text-xl lg:text-gray-900 lg:mx-5 lg:my-5
+          xl:text-xl xl:text-gray-900 xl:mx-5 xl:my-5">Our range of palisade fencing and wall spikes are designed to provide effective security solutions for your property. Made from high-quality materials like steel, these fencing and wall spikes offer a sturdy barrier for deterring intruders and protecting boundaries. Available in various sizes and designs, they act as a deterrent to unauthorized access and enhance property security. Both products are easy to install and maintain, ensuring peace of mind for your premises.</p>
+        </div>
+        <div class="flex justify-center">
+          <img class="block h-[250px] w-[200px] my-7 rounded-md
+          md:block md:h-[250px] md:w-[300px] md:shadow-md md:shadow-gray-700 md:rounded-full md:my-7
+          lg:block lg:h-[400px] lg:w-[580px] lg:shadow-md lg:shadow-gray-700 lg:rounded-md lg:my-0
+          xl:block xl:h-[400px] xl:w-[580px] xl:shadow-md xl:shadow-gray-700 xl:rounded-md xl:my-0" src="img/fancing.jpg" alt="">
+        </div>
+      </div>
+      <div class="block justify mx-8 mt-10
+      md:flex md:justify-between md:mx-16 md:mt-20
+      lg:flex lg:justify-between lg:mx-16 lg:mt-28
+      xl:flex xl:justify-between xl:mx-16 xl:mt-28">
+        <div class="md:w-[500px] md:mx-auto
+        lg:w-[600px] lg:mx-auto
+        xl:w-[600px] xl:mx-auto">
+          <h1 class="text-3xl text-gray-700 text-center font-semibold
+          md:text-3xl md:text-gray-700 md:text-center md:font-semibold
+          lg:text-5xl lg:text-gray-700 lg:text-center lg:font-semibold
+          xl:text-5xl xl:text-gray-700 xl:text-center xl:font-semibold">Repairs of <span class="text-red-700">Our</span> Services</h1>
+          <p class="text-base text-gray-900 text-justify mx-5 my-5
+          md:text-base md:text-gray-900 md:mx-5 md:my-5
+          lg:text-xl lg:text-gray-900 lg:mx-5 lg:my-5
+          xl:text-xl xl:text-gray-900 xl:mx-5 xl:my-5">Our expert technicians are dedicated to ensuring your property's security and optimal functioning. They specialize in repairing aluminum doors, windows, garage doors, staircases, security doors, and burglar bars. They can fix faulty locks, realign tracks, and replace damaged components efficiently. Their commitment to quality ensures your home or business's safety, and they offer reliable repair services tailored to your needs.</p>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+  <footer>
+    <section class="bg-gray-700">
+      <article class="max-w-[1000px] mx-auto py-16">
+        <div class="flex flex-col items-center">
+          <div class="flex space-x-4 items-center">
+            
+
+            <p class="text-sm font-semibold text-white">Moelo Alusteel And Glass</p>
+          </div>
+        </div>
+
+        <div class="mt-5 text-center">
+          <p class="text-white">
+            &quot; Worthwhile Services for
+            <span class="text-red-700 font-semibold">Personal</span> /
+            <span class="text-red-700 font-semibold">Businesses'</span>
+            needs &quot;
+          </p>
+        </div>
+
+        <div class="mt-10 flex flex-col space-x-4 items-center">
+          <h1 class="text-xl font-semibold mb-4 text-white">Our Location</h1>
+
+          <ul class="flex space-x-6">
+            <li
+              class="">
+              <h1 class="text-white">Maseru(HQ)</h1>
+            </li>
+            <li
+              class="">
+              <h1 class="text-white">Mafeteng</h1>
+            </li>
+            <li
+              class="">
+              <h1 class="text-white">Hlotse</h1>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="bg-gray-950 p-2">
+        <p class="text-center text-white font-semibold text-sm">
+          Moelo Alusteel And Glass <span class="text-red-700">&copy;</span>
+          <span class="year">2024</span>. <span>All Rights Reserved</span>
+        </p>
+      </article>
+    </section>
+  </footer>
+  
+</body>
+</html>
